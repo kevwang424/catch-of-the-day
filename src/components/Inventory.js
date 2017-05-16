@@ -22,14 +22,14 @@ class Inventory extends React.Component{
     const fish = this.props.fishes[key]
     return (
       <div className="fish-edit" key={key}>
-        <input type="text" value={fish.name} placeholder="Fish Name" onChange={(e) => this.handleChange(e, key)}></input>
-        <input type="text" value={fish.price} placeholder="Fish Price" onChange={(e) => this.handleChange(e, key)}></input>
-        <select value={fish.status} onChange={(e) => this.handleChange(e, key)}>
+        <input type="text" name="name" value={fish.name} placeholder="Fish Name" onChange={(e) => this.handleChange(e, key)}></input>
+        <input type="text" name="price" value={fish.price} placeholder="Fish Price" onChange={(e) => this.handleChange(e, key)}></input>
+        <select name="status" value={fish.status} onChange={(e) => this.handleChange(e, key)}>
           <option value="available">Fresh!</option>
           <option value="unavailable">Sold Out!</option>
         </select>
-        <textarea type="text" value={fish.desc} placeholder="Fish Desc" onChange={(e) => this.handleChange(e, key)}></textarea>
-        <input type="text" value={fish.image} placeholder="Fish Image" onChange={(e) => this.handleChange(e, key)}></input>
+        <textarea type="text" name="desc" value={fish.desc} placeholder="Fish Desc" onChange={(e) => this.handleChange(e, key)}></textarea>
+        <input type="text" name="image" value={fish.image} placeholder="Fish Image" onChange={(e) => this.handleChange(e, key)}></input>
       </div>
     )
   }
