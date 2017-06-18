@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import base from '../base'
 
 import AddFishForm from './AddFishForm'
 
-class Inventory extends React.Component{
+class Inventory extends Component{
 
   state = {
     uid: null,

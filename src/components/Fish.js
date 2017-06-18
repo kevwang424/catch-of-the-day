@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import { formatPrice } from '../helpers.js'
 
-class Fish extends React.Component {
+class Fish extends Component {
   render(){
 
     const { details, index } = this.props

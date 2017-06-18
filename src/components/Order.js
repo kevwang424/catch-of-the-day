@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import CSSTransitionGroup from 'react-addons-css-transition-group'
 
 import { formatPrice } from '../helpers'
 
-class Order extends React.Component{
+class Order extends Component{
 
   renderOrder = (key) => {
     const fish = this.props.fishes[key]

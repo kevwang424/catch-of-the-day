@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Header from './Header'
 import Order from './Order'
@@ -8,7 +8,7 @@ import Fish from './Fish'
 import sampleFishes from '../sample-fishes'
 import base from '../base'
 
-class App extends React.Component {
+class App extends Component {
 
   state = {
     fishes: {},

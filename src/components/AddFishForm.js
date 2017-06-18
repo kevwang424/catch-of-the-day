@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-class AddFishForm extends React.Component{
+class AddFishForm extends Component{
 
   createFish(event){
     event.preventDefault()
@@ -27,7 +27,7 @@ class AddFishForm extends React.Component{
         </select>
         <textarea ref={(input) => this.desc = input} type="text" placeholder="Fish Desc"></textarea>
         <input ref={(input) => this.image = input} type="text" placeholder="Fish Image"></input>
-        <button type="submit">Add Item</button>
+        <button type="submit" className="button">Get Quote!</button>
       </form>
     )
   }
