@@ -3,7 +3,7 @@ import base from '../base'
 
 import AddFishForm from './AddFishForm'
 
-class Inventory extends Component{
+export default class Inventory extends Component{
 
   state = {
     uid: null,
@@ -129,5 +129,3 @@ Inventory.propTypes = {
   loadSamples: React.PropTypes.func.isRequired,
   storeId: React.PropTypes.string.isRequired
 }
-
-export default Inventory

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class AddFishForm extends Component{
+export default class AddFishForm extends Component{
 
   createFish(event){
     event.preventDefault()
@@ -36,4 +36,3 @@ class AddFishForm extends Component{
 AddFishForm.propTypes = {
   addFish: React.PropTypes.func.isRequired
 }
-export default AddFishForm

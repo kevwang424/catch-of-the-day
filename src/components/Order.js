@@ -3,7 +3,7 @@ import CSSTransitionGroup from 'react-addons-css-transition-group'
 
 import { formatPrice } from '../helpers'
 
-class Order extends Component{
+export default class Order extends Component{
 
   renderOrder = (key) => {
     const fish = this.props.fishes[key]
@@ -73,5 +73,3 @@ Order.propTypes = {
   order: React.PropTypes.object.isRequired,
   removeFromOrder: React.PropTypes.func.isRequired
 }
-
-export default Order

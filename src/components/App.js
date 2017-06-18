@@ -8,7 +8,7 @@ import Fish from './Fish'
 import sampleFishes from '../sample-fishes'
 import base from '../base'
 
-class App extends Component {
+export default class App extends Component {
 
   state = {
     fishes: {},
@@ -108,5 +108,3 @@ class App extends Component {
 App.propTypes = {
   params: React.PropTypes.object.isRequired
 }
-
-export default App

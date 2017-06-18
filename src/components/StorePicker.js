@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { getFunName } from '../helpers'
 
-class StorePicker extends Component {
+export default class StorePicker extends Component {
 
   goToStore(event){
     event.preventDefault()
@@ -27,5 +27,3 @@ class StorePicker extends Component {
 StorePicker.contextTypes = {
   router: React.PropTypes.object
 }
-
-export default StorePicker

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { formatPrice } from '../helpers.js'
 
-class Fish extends Component {
+export default class Fish extends Component {
   render(){
 
     const { details, index } = this.props
@@ -29,5 +29,3 @@ Fish.propTypes = {
   index: React.PropTypes.string.isRequired,
   addToOrder: React.PropTypes.func.isRequired
 }
-
-export default Fish
